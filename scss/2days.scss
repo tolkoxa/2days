@@ -1,0 +1,102 @@
+@import '_param';
+html {
+    font-size: 10px;
+}
+
+*,
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.header {
+    &__style {
+        width: 100%;
+        min-height: 100vh;
+        // background-color: $color_black;
+        background-image: url(../img/cover-wall.png);
+        background-position: center center;
+        background-size: cover;
+        padding-top: 150px;
+    }
+    &__text {
+        width: 500px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__numb {}
+}
+
+.container-cover {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-top {}
+
+.text-your {
+    font-family: $font_title;
+    font-weight: 200;
+    font-size: 10rem;
+    line-height: 100%;
+    color: $color_purple;
+    text-transform: uppercase;
+}
+
+.text-lpage {
+    font-weight: 600;
+}
+
+.text-bottom {}
+
+.text-days {
+    font-family: $font_title;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 100%;
+    color: $color_yellow;
+}
+
+.twodays {
+    font-size: 10rem;
+}
+
+.text-numb {
+    font-family: $font_number;
+    font-weight: 300;
+    font-size: 50rem;
+    line-height: 40rem;
+    color: $color_white;
+    position: relative;
+    top: 0;
+    // color: $color_black;
+    animation: 4s infinite numb-fly;
+    &:hover {
+        cursor: default;
+    }
+}
+
+.neon {
+    text-shadow: -2px -2px 10px $color_black, 2px 2px 10px $color_white, 0 0 20px $color_neon, 0 0 40px $color_neon, 0 0 60px $color_neon, 0 0 80px $color_neon;
+}
+
+@keyframes numb-fly {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: -30px;
+    }
+    100% {
+        top: 0px;
+    }
+}

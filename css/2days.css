@@ -1,0 +1,75 @@
+html {
+  font-size: 10px; }
+
+*,
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  box-sizing: border-box; }
+
+.wrapper {
+  width: 100%; }
+
+.header__style {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/cover-wall.png);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 150px; }
+.header__text {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.container-cover {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+.text-your {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 10rem;
+  line-height: 100%;
+  color: #B24AE2;
+  text-transform: uppercase; }
+
+.text-lpage {
+  font-weight: 600; }
+
+.text-days {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 100%;
+  color: #D8EB00; }
+
+.twodays {
+  font-size: 10rem; }
+
+.text-numb {
+  font-family: "Days One", sans-serif;
+  font-weight: 300;
+  font-size: 50rem;
+  line-height: 40rem;
+  color: #fff;
+  position: relative;
+  top: 0;
+  animation: 4s infinite numb-fly; }
+  .text-numb:hover {
+    cursor: default; }
+
+.neon {
+  text-shadow: -2px -2px 10px #000, 2px 2px 10px #fff, 0 0 20px #9304e6, 0 0 40px #9304e6, 0 0 60px #9304e6, 0 0 80px #9304e6; }
+
+@keyframes numb-fly {
+  0% {
+    top: 0px; }
+  50% {
+    top: -30px; }
+  100% {
+    top: 0px; } }
